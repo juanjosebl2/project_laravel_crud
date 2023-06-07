@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->float('precio');
             $table->string('description');
+            $table->date('fecha')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->unsignedBigInteger('cliente_id');
             $table->foreign('cliente_id')->references('id')->on('clientes')->onDelete('cascade');
 

@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property $id
  * @property $precio
+ * @property $description
  * @property $cliente_id
  * @property $created_at
  * @property $updated_at
@@ -22,6 +23,7 @@ class Pedido extends Model
     
     static $rules = [
 		'precio' => 'required',
+		'description' => 'required',
 		'cliente_id' => 'required',
     ];
 
@@ -32,7 +34,7 @@ class Pedido extends Model
      *
      * @var array
      */
-    protected $fillable = ['precio','cliente_id'];
+    protected $fillable = ['precio','description','cliente_id'];
 
 
     /**

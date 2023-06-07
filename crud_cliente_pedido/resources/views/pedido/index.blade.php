@@ -37,6 +37,8 @@
                                         <th>No</th>
                                         
 										<th>Precio</th>
+										<th>Description</th>
+                                        <th>Fecha</th>
 										<th>Cliente Id</th>
 
                                         <th></th>
@@ -48,6 +50,8 @@
                                             <td>{{ ++$i }}</td>
                                             
 											<td>{{ $pedido->precio }}</td>
+											<td>{{ $pedido->description }}</td>
+                                            <td>{{ $pedido->fecha }}</td>
 											<td>{{ $pedido->cliente->name }}</td>
 
                                             <td>

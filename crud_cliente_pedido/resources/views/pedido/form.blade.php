@@ -12,6 +12,11 @@
             {{ Form::text('precio', $pedido->precio, ['class' => 'form-control' . ($errors->has('precio') ? ' is-invalid' : ''), 'placeholder' => 'Precio']) }}
             {!! $errors->first('precio', '<div class="invalid-feedback">:message</div>') !!}
         </div>
+        <div class="form-group">
+            {{ Form::label('description') }}
+            {{ Form::text('description', $pedido->description, ['class' => 'form-control' . ($errors->has('description') ? ' is-invalid' : ''), 'placeholder' => 'Description']) }}
+            {!! $errors->first('description', '<div class="invalid-feedback">:message</div>') !!}
+        </div>
         
 
     </div>

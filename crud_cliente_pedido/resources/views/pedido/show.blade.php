@@ -25,6 +25,10 @@
                             {{ $pedido->precio }}
                         </div>
                         <div class="form-group">
+                            <strong>Description:</strong>
+                            {{ $pedido->description }}
+                        </div>
+                        <div class="form-group">
                             <strong>Cliente Id:</strong>
                             {{ $pedido->cliente_id }}
                         </div>
